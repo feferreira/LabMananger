@@ -26,6 +26,7 @@ void LoginForm::userIsValid(bool isValid)
     else {
         this->ui->passInput->clear();
         this->ui->userInput->clear();
+        this->ui->loginReply->setText("Dados incorretos.");
     }
 }
 
