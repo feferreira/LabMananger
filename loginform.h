@@ -6,6 +6,7 @@
 namespace Ui {
 class LoginForm;
 }
+class QKeyEvent;
 
 class LoginForm : public QWidget
 {
@@ -26,7 +27,9 @@ private slots:
 
     void on_loginButton_clicked();
 
+
 private:
+    void keyPressEvent(QKeyEvent *event);
     Ui::LoginForm *ui;
 };
 
