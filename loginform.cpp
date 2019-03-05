@@ -20,5 +20,5 @@ void LoginForm::on_exitButton_clicked()
 
 void LoginForm::on_loginButton_clicked()
 {
-    *user = "Fernando";
+    emit validateUser(this->ui->userInput->text(),this->ui->passInput->text());
 }

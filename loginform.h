@@ -15,6 +15,9 @@ public:
     explicit LoginForm(QWidget *parent = nullptr);
     ~LoginForm();
 
+signals:
+    void validateUser(QString user, QString pass);
+
 private slots:
     void on_exitButton_clicked();
 
