@@ -1,11 +1,13 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include "loginform.h"
+#include "loginvalidator.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-
+    LoginForm loginForm;
+    LoginValidator loginValidator;
+    loginForm.show();
     return a.exec();
 }

@@ -26,13 +26,18 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    loginform.cpp \
+    loginvalidator.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    loginform.h \
+    loginvalidator.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    loginform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -40,4 +45,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    README.md
+    README.md \
+    .gitignore
