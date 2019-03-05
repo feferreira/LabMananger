@@ -18,7 +18,18 @@ void LoginForm::on_exitButton_clicked()
     QApplication::quit();
 }
 
+void LoginForm::userIsValid(bool isValid)
+{
+    if(isValid){
+        this->close();
+    }
+    else {
+        this->ui->passInput->clear();
+        this->ui->userInput->clear();
+    }
+}
+
 void LoginForm::on_loginButton_clicked()
 {
-    emit validateUser(this->ui->userInput->text(),this->ui->passInput->text());
+    emit signalValidateUser(this->ui->userInput->text(),this->ui->passInput->text());
 }

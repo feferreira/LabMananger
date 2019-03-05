@@ -13,3 +13,8 @@ MainWindow::~MainWindow()
     delete ui;
 
 }
+
+void MainWindow::validUser(QString user)
+{
+    this->show();
+}

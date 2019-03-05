@@ -8,7 +8,10 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     LoginForm loginForm;
     LoginValidator loginValidator;
-    QObject::connect(&loginForm, &LoginForm::validateUser, &loginValidator, &LoginValidator::validateUser);
+    MainWindow mainWindow;
+    QObject::connect(&loginForm, &LoginForm::signalValidateUser, &loginValidator, &LoginValidator::slotValidateUser);
+    QObject::connect(&loginValidator, &LoginValidator::userValidated, &loginForm, &LoginForm::userIsValid);
+    QObject::connect(&loginValidator, &LoginValidator::userValid, &mainWindow, &MainWindow::validUser);
     loginForm.show();
     return a.exec();
 }

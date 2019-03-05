@@ -11,9 +11,10 @@ public:
 
 signals:
     void userValid(QString user);
+    void userValidated(bool isValid);
 
 public slots:
-    void validateUser(QString user, QString pass);
+    void slotValidateUser(QString user, QString pass);
 };
 
 #endif // LOGINVALIDATOR_H

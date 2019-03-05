@@ -16,7 +16,10 @@ public:
     ~LoginForm();
 
 signals:
-    void validateUser(QString user, QString pass);
+    void signalValidateUser(QString user, QString pass);
+
+public slots:
+    void userIsValid(bool isValid);
 
 private slots:
     void on_exitButton_clicked();
