@@ -2,6 +2,7 @@
 #include <QApplication>
 #include "loginform.h"
 #include "loginvalidator.h"
+#include "dbwizard.h"
 
 int main(int argc, char *argv[])
 {

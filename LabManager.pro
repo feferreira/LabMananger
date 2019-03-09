@@ -28,16 +28,19 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     loginform.cpp \
-    loginvalidator.cpp
+    loginvalidator.cpp \
+    dbwizard.cpp
 
 HEADERS += \
         mainwindow.h \
     loginform.h \
-    loginvalidator.h
+    loginvalidator.h \
+    dbwizard.h
 
 FORMS += \
         mainwindow.ui \
-    loginform.ui
+    loginform.ui \
+    dbwizard.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
