@@ -7,6 +7,10 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+    DbWizard dbWizard;
+    dbWizard.show();
+
     LoginForm loginForm;
     LoginValidator loginValidator;
     MainWindow mainWindow;

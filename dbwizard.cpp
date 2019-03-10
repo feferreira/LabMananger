@@ -1,14 +1,14 @@
 #include "dbwizard.h"
 #include "ui_dbwizard.h"
 
-dbWizard::dbWizard(QWidget *parent) :
+DbWizard::DbWizard(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::dbWizard)
 {
     ui->setupUi(this);
 }
 
-dbWizard::~dbWizard()
+DbWizard::~DbWizard()
 {
     delete ui;
 }

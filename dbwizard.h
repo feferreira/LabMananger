@@ -7,13 +7,13 @@ namespace Ui {
 class dbWizard;
 }
 
-class dbWizard : public QWidget
+class DbWizard : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit dbWizard(QWidget *parent = nullptr);
-    ~dbWizard();
+    explicit DbWizard(QWidget *parent = nullptr);
+    ~DbWizard();
 
 private:
     Ui::dbWizard *ui;
