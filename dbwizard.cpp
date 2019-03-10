@@ -12,3 +12,8 @@ DbWizard::~DbWizard()
 {
     delete ui;
 }
+
+void DbWizard::on_exitButton_clicked()
+{
+    QApplication::quit();
+}

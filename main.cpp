@@ -3,6 +3,7 @@
 #include "loginform.h"
 #include "loginvalidator.h"
 #include "dbwizard.h"
+#include "mysqlhelper.h"
 
 int main(int argc, char *argv[])
 {

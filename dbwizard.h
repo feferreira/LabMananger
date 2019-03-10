@@ -15,6 +15,9 @@ public:
     explicit DbWizard(QWidget *parent = nullptr);
     ~DbWizard();
 
+private slots:
+    void on_exitButton_clicked();
+
 private:
     Ui::dbWizard *ui;
 };

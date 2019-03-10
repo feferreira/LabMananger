@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -29,13 +29,15 @@ SOURCES += \
         mainwindow.cpp \
     loginform.cpp \
     loginvalidator.cpp \
-    dbwizard.cpp
+    dbwizard.cpp \
+    mysqlhelper.cpp
 
 HEADERS += \
         mainwindow.h \
     loginform.h \
     loginvalidator.h \
-    dbwizard.h
+    dbwizard.h \
+    mysqlhelper.h
 
 FORMS += \
         mainwindow.ui \
