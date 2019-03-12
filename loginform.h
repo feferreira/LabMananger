@@ -28,6 +28,8 @@ private slots:
     void on_loginButton_clicked();
 
 
+    void on_userInput_textEdited(const QString &arg1);
+
 private:
     void keyPressEvent(QKeyEvent *event);
     Ui::LoginForm *ui;
