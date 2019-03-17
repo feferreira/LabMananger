@@ -30,14 +30,16 @@ SOURCES += \
     loginform.cpp \
     loginvalidator.cpp \
     dbwizard.cpp \
-    mysqlhelper.cpp
+    mysqlhelper.cpp \
+    dbconfig.cpp
 
 HEADERS += \
         mainwindow.h \
     loginform.h \
     loginvalidator.h \
     dbwizard.h \
-    mysqlhelper.h
+    mysqlhelper.h \
+    dbconfig.h
 
 FORMS += \
         mainwindow.ui \
