@@ -1,5 +1,7 @@
 #include "mysqlhelper.h"
 #include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QVariant>
 #include <QDebug>
 
 MysqlHelper::MysqlHelper(DbConfig &config, QObject *parent) : QObject(parent)
@@ -9,6 +11,6 @@ MysqlHelper::MysqlHelper(DbConfig &config, QObject *parent) : QObject(parent)
     db.setUserName(config.dbUsername);
     db.setDatabaseName(config.dbName);
     if(db.open()){
-        qDebug() << "db open sucessfully!";
+        qDebug() << "Databse open sucessfully!";
     }
 }

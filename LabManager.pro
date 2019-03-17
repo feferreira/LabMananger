@@ -24,6 +24,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
@@ -31,7 +32,8 @@ SOURCES += \
     loginvalidator.cpp \
     dbwizard.cpp \
     mysqlhelper.cpp \
-    dbconfig.cpp
+    dbconfig.cpp \
+    sqlquery.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -39,7 +41,8 @@ HEADERS += \
     loginvalidator.h \
     dbwizard.h \
     mysqlhelper.h \
-    dbconfig.h
+    dbconfig.h \
+    sqlquery.h
 
 FORMS += \
         mainwindow.ui \
