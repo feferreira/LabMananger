@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+class QTreeWidgetItem;
+
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +19,11 @@ public:
 
 public slots:
     void validUser(QString user);
+
+private slots:
+
+
+
 
 private:
     Ui::MainWindow *ui;

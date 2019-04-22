@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DBCONFIG_H	dbconfig.h	2;"	d
+DBWIZARD_H	dbwizard.h	2;"	d
+DbConfig	dbconfig.cpp	/^DbConfig::DbConfig(QString host, QString name, QString user, QString pass)$/;"	f	class:DbConfig
+DbConfig	dbconfig.h	/^class DbConfig$/;"	c
+DbWizard	dbwizard.cpp	/^DbWizard::DbWizard(QWidget *parent) :$/;"	f	class:DbWizard
+DbWizard	dbwizard.h	/^class DbWizard : public QWidget$/;"	c
+LOGINFORM_H	loginform.h	2;"	d
+LOGINVALIDATOR_H	loginvalidator.h	2;"	d
+LoginForm	loginform.cpp	/^LoginForm::LoginForm(QWidget *parent) :$/;"	f	class:LoginForm
+LoginForm	loginform.h	/^class LoginForm : public QWidget$/;"	c
+LoginValidator	loginvalidator.cpp	/^LoginValidator::LoginValidator(QObject *parent) : QObject(parent)$/;"	f	class:LoginValidator
+LoginValidator	loginvalidator.h	/^class LoginValidator : public QObject$/;"	c
+MAINWINDOW_H	mainwindow.h	2;"	d
+MYSQLHELPER_H	mysqlhelper.h	2;"	d
+MainWindow	mainwindow.cpp	/^MainWindow::MainWindow(QWidget *parent) :$/;"	f	class:MainWindow
+MainWindow	mainwindow.h	/^class MainWindow : public QMainWindow$/;"	c
+MysqlHelper	mysqlhelper.cpp	/^MysqlHelper::MysqlHelper(DbConfig &config, QObject *parent) : QObject(parent)$/;"	f	class:MysqlHelper
+MysqlHelper	mysqlhelper.h	/^class MysqlHelper : public QObject$/;"	c
+SQLQUERY_H	sqlquery.h	2;"	d
+SqlQuery	sqlquery.cpp	/^SqlQuery::SqlQuery(QObject *parent): QObject(parent)$/;"	f	class:SqlQuery
+SqlQuery	sqlquery.h	/^class SqlQuery : public QObject$/;"	c
+Ui	dbwizard.h	/^namespace Ui {$/;"	n
+Ui	loginform.h	/^namespace Ui {$/;"	n
+Ui	mainwindow.h	/^namespace Ui {$/;"	n
+db	mysqlhelper.h	/^    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");$/;"	m	class:MysqlHelper
+dbHost	dbconfig.h	/^    QString dbHost;$/;"	m	class:DbConfig
+dbName	dbconfig.h	/^    QString dbName;$/;"	m	class:DbConfig
+dbPassword	dbconfig.h	/^    QString dbPassword;$/;"	m	class:DbConfig
+dbUsername	dbconfig.h	/^    QString dbUsername;$/;"	m	class:DbConfig
+keyPressEvent	loginform.cpp	/^void LoginForm::keyPressEvent( QKeyEvent * event )$/;"	f	class:LoginForm
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+on_exitButton_clicked	dbwizard.cpp	/^void DbWizard::on_exitButton_clicked()$/;"	f	class:DbWizard
+on_exitButton_clicked	loginform.cpp	/^void LoginForm::on_exitButton_clicked()$/;"	f	class:LoginForm
+on_loginButton_clicked	loginform.cpp	/^void LoginForm::on_loginButton_clicked()$/;"	f	class:LoginForm
+on_userInput_textEdited	loginform.cpp	/^void LoginForm::on_userInput_textEdited(const QString &arg1)$/;"	f	class:LoginForm
+selectLoginPassword	sqlquery.cpp	/^QString SqlQuery::selectLoginPassword(QString Login)$/;"	f	class:SqlQuery
+slotValidateUser	loginvalidator.cpp	/^void LoginValidator::slotValidateUser(QString user, QString pass)$/;"	f	class:LoginValidator
+test	unitTest/tst_test.cpp	/^class test : public QObject$/;"	c	file:
+test	unitTest/tst_test.cpp	/^test::test()$/;"	f	class:test
+test_case1	unitTest/tst_test.cpp	/^void test::test_case1()$/;"	f	class:test
+ui	dbwizard.h	/^    Ui::dbWizard *ui;$/;"	m	class:DbWizard
+ui	loginform.h	/^    Ui::LoginForm *ui;$/;"	m	class:LoginForm
+ui	mainwindow.h	/^    Ui::MainWindow *ui;$/;"	m	class:MainWindow
+user	loginform.h	/^    QString *user = nullptr;$/;"	m	class:LoginForm
+userIsValid	loginform.cpp	/^void LoginForm::userIsValid(bool isValid)$/;"	f	class:LoginForm
+validUser	mainwindow.cpp	/^void MainWindow::validUser(QString user)$/;"	f	class:MainWindow
+~DbWizard	dbwizard.cpp	/^DbWizard::~DbWizard()$/;"	f	class:DbWizard
+~LoginForm	loginform.cpp	/^LoginForm::~LoginForm()$/;"	f	class:LoginForm
+~MainWindow	mainwindow.cpp	/^MainWindow::~MainWindow()$/;"	f	class:MainWindow
+~test	unitTest/tst_test.cpp	/^test::~test()$/;"	f	class:test

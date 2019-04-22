@@ -13,14 +13,15 @@ int main(int argc, char *argv[])
     DbConfig dbConfig("127.0.0.1","laboratorio","fernando","concre");
     MysqlHelper mysqlHelper(dbConfig);
 
-
     LoginForm loginForm;
     LoginValidator loginValidator;
     MainWindow mainWindow;
+
     QObject::connect(&loginForm, &LoginForm::signalValidateUser, &loginValidator, &LoginValidator::slotValidateUser);
     QObject::connect(&loginValidator, &LoginValidator::userValidated, &loginForm, &LoginForm::userIsValid);
     QObject::connect(&loginValidator, &LoginValidator::userValid, &mainWindow, &MainWindow::validUser);
-    loginForm.show();
 
+    //loginForm.show();
+    //mainWindow.show();
     return a.exec();
 }

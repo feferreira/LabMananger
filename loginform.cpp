@@ -24,7 +24,7 @@ void LoginForm::on_exitButton_clicked()
 void LoginForm::userIsValid(bool isValid)
 {
     if(isValid){
-        //this->close();
+        this->close();
     }
     else {
         this->ui->passInput->clear();
@@ -47,7 +47,7 @@ void LoginForm::on_loginButton_clicked()
     else{
         this->ui->loginReply->setStyleSheet("QLabel{color:green;}");
         this->ui->loginReply->setText("Conectando...");
-        emit signalValidateUser(this->ui->userInput->text(),this->ui->passInput->text());
+        emit signalValidateUser(this->ui->userInput->text().toLower(),this->ui->passInput->text());
     }
 }
 

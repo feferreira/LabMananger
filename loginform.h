@@ -24,10 +24,7 @@ public slots:
 
 private slots:
     void on_exitButton_clicked();
-
     void on_loginButton_clicked();
-
-
     void on_userInput_textEdited(const QString &arg1);
 
 private:

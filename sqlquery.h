@@ -3,11 +3,14 @@
 #include <QObject>
 #include <QSqlQuery>
 
+class QSqlTableModel;
+
 class SqlQuery : public QObject
 {
     Q_OBJECT
-
+    QSqlTableModel *model{nullptr};
 public:
+    QSqlTableModel *getSupplierModel();
     SqlQuery(QObject *parent = nullptr);
     QString selectLoginPassword(QString Login);
 };

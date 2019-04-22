@@ -6,20 +6,71 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>636</width>
+    <width>843</width>
     <height>426</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="ComponentView" name="widgetWindow" native="true">
+    <property name="geometry">
+     <rect>
+      <x>269</x>
+      <y>9</y>
+      <width>571</width>
+      <height>347</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>256</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>Componentes</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Relatório</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Consulta</string>
+      </property>
+     </item>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fornecedores</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Usuários</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>636</width>
+     <width>843</width>
      <height>22</height>
     </rect>
    </property>
@@ -35,6 +86,14 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ComponentView</class>
+   <extends>QWidget</extends>
+   <header>componentview.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

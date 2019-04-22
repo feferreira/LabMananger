@@ -33,7 +33,9 @@ SOURCES += \
     dbwizard.cpp \
     mysqlhelper.cpp \
     dbconfig.cpp \
-    sqlquery.cpp
+    sqlquery.cpp \
+    componentview.cpp \
+    supplierview.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -42,12 +44,16 @@ HEADERS += \
     dbwizard.h \
     mysqlhelper.h \
     dbconfig.h \
-    sqlquery.h
+    sqlquery.h \
+    componentview.h \
+    supplierview.h
 
 FORMS += \
         mainwindow.ui \
     loginform.ui \
-    dbwizard.ui
+    dbwizard.ui \
+    componentview.ui \
+    supplierview.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
