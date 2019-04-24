@@ -38,6 +38,7 @@ SOURCES += \
     supplierview.cpp
 
 HEADERS += \
+    labmanagertypes.h \
         mainwindow.h \
     loginform.h \
     loginvalidator.h \

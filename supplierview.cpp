@@ -3,6 +3,7 @@
 #include "sqlquery.h"
 #include <QSqlTableModel>
 #include <QVariant>
+#include <QMessageBox>
 
 SupplierView::SupplierView(QWidget *parent) :
     QWidget(parent),
@@ -10,7 +11,6 @@ SupplierView::SupplierView(QWidget *parent) :
     ui(new Ui::SupplierView)
 {
     ui->setupUi(this);
-    ui->supplierTable->setModel(query->getSupplierModel());
 }
 
 SupplierView::~SupplierView()
@@ -18,7 +18,21 @@ SupplierView::~SupplierView()
     delete ui;
 }
 
-void SupplierView::on_supplierTable_doubleClicked(const QModelIndex &index)
+
+void SupplierView::on_pushButtonSave_clicked()
 {
-    ui->lineEditName->setText(ui->supplierTable->model()->data(index).toString());
+    SUPPLIER_MODEL model{
+        this->ui->lineEditName->text(),
+                this->ui->lineEditWebsite->text(),
+                this->ui->lineEditAddress->text(),
+                this->ui->lineEditPhone->text(),
+                this->ui->lineEditEmail->text()
+    };
+    if(query->insertSupplier(model)){
+        QMessageBox::information(this,"Sucesso","Fornecedor\nCadastrado.");
+    }
+    else {
+        QMessageBox::warning(this,"Falha","Falha ao cadastrar.");
+    }
+
 }

@@ -18,7 +18,8 @@ public:
     ~SupplierView();
 
 private slots:
-    void on_supplierTable_doubleClicked(const QModelIndex &index);
+
+    void on_pushButtonSave_clicked();
 
 private:
     SqlQuery *query{nullptr};
