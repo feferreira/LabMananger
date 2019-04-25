@@ -36,3 +36,12 @@ void SupplierView::on_pushButtonSave_clicked()
     }
 
 }
+
+void SupplierView::on_pushButtonNew_clicked()
+{
+    this->ui->lineEditName->clear();
+    this->ui->lineEditWebsite->clear();
+    this->ui->lineEditAddress->clear();
+    this->ui->lineEditPhone->clear();
+    this->ui->lineEditEmail->clear();
+}

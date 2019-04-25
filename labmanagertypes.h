@@ -10,4 +10,17 @@ typedef struct supplierModel{
     QString email;
 }SUPPLIER_MODEL;
 
+typedef struct componentModel{
+    QString description;
+    QString localization;
+    QString type;
+    int quantity;
+    double price;
+    QString partNumberMFR;
+    QString partNumberSupplier;
+    QString supplier;
+    QString dataSheet;
+    QString QrCode;
+}COMPONENT_MODEL;
+
 #endif // LABMANAGERTYPES_H

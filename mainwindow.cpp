@@ -10,8 +10,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    SupplierView *sup = new SupplierView;
-    sup->show();
+    //SupplierView *sup = new SupplierView;
+    //sup->show();
+    ComponentView *comp = new ComponentView;
+    comp->show();
 }
 
 MainWindow::~MainWindow()

@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButtonSave_clicked();
 
+    void on_pushButtonNew_clicked();
+
 private:
     SqlQuery *query{nullptr};
     Ui::SupplierView *ui;
