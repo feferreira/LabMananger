@@ -26,6 +26,7 @@ CONFIG += c++11
 
 
 SOURCES += \
+    centralizewidget.cpp \
         main.cpp \
         mainwindow.cpp \
     loginform.cpp \
@@ -38,6 +39,7 @@ SOURCES += \
     supplierview.cpp
 
 HEADERS += \
+    centralizewidget.h \
     labmanagertypes.h \
         mainwindow.h \
     loginform.h \

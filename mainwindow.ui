@@ -6,74 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>843</width>
-    <height>426</height>
+    <width>1003</width>
+    <height>487</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="ComponentView" name="widgetWindow" native="true">
-    <property name="geometry">
-     <rect>
-      <x>269</x>
-      <y>9</y>
-      <width>571</width>
-      <height>347</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QTreeWidget" name="treeWidget">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>256</width>
-      <height>341</height>
-     </rect>
-    </property>
-    <column>
-     <property name="text">
-      <string>1</string>
-     </property>
-    </column>
+   <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <property name="text">
-      <string>Componentes</string>
-     </property>
-     <item>
-      <property name="text">
-       <string>Relatório</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Consulta</string>
-      </property>
-     </item>
+     <widget class="QWidget" name="widgetView" native="true"/>
     </item>
-    <item>
-     <property name="text">
-      <string>Fornecedores</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Usuários</string>
-     </property>
-    </item>
-   </widget>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>843</width>
+     <width>1003</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuComponentes">
+    <property name="title">
+     <string>LabManager</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuFornecedor">
+    <property name="title">
+     <string>Cadastro</string>
+    </property>
+    <addaction name="actionRegisterSupplier"/>
+    <addaction name="actionRegisterPart"/>
+   </widget>
+   <addaction name="menuComponentes"/>
+   <addaction name="menuFornecedor"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -84,16 +54,23 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRegisterSupplier">
+   <property name="text">
+    <string>Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionRegisterPart">
+   <property name="text">
+    <string>Componente</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Sair</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <customwidgets>
-  <customwidget>
-   <class>ComponentView</class>
-   <extends>QWidget</extends>
-   <header>componentview.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
